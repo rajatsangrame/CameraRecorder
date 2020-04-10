@@ -86,7 +86,8 @@ public enum Filters {
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sachin, options);
                 return new GlRajatOverlayFilter(bitmap);
             case OVERLAY_DYNAMIC:
-                return new GlRajatDynamicFilter(BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker));
+                bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker, options);
+                return new GlRajatDynamicFilter(bitmap);
             case SEPIA:
                 return new GlSepiaFilter();
             case SHARPEN:
