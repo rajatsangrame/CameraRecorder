@@ -20,6 +20,8 @@ import java.nio.FloatBuffer;
  * Ref : https://stackoverflow.com/questions/34575127/texture-is-flipped-and-upside-down
  * Ref : https://www.glprogramming.com/red/chapter08.html
  * Ref: https://blog.jayway.com/2010/12/30/opengl-es-tutorial-for-android-part-vi-textures/
+ * Ref: https://developer.android.com/guide/topics/graphics/opengl
+ * Ref: https://gamedev.stackexchange.com/questions/65962/what-does-the-identity-matrix-really-do
  */
 
 public class GlRajatDynamicFilter extends GlFilter {
@@ -86,6 +88,9 @@ public class GlRajatDynamicFilter extends GlFilter {
         this.inputResolution = resolution;
     }
 
+    private int[] mFrameBuffers;
+    private int[] mFrameBufferTextures;
+
     @Override
     public void setFrameSize(int width, int height) {
         super.setFrameSize(width, height);
@@ -104,6 +109,30 @@ public class GlRajatDynamicFilter extends GlFilter {
         android.opengl.Matrix.setLookAtM(viewMatrix, 0, 0f, 0f, 0f,
                 0f, 0f, -4f, 0f, 1.0f, 0.0f); // camera
         android.opengl.Matrix.frustumM(projectionMatrix, 0, left, right, bottom, top, near, far);
+    }
+
+    public static void createFrameBuffer(int[] frameBuffer, int[] frameBufferTexture,
+                                         int width, int height) {
+        GLES20.glGenFramebuffers(frameBuffer.length, frameBuffer, 0);
+        GLES20.glGenTextures(frameBufferTexture.length, frameBufferTexture, 0);
+        for (int i = 0; i < frameBufferTexture.length; i++) {
+            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, frameBufferTexture[i]);
+            GLES20.glTexImage2D(GLES20.GL_TEXTURE_2D, 0, GLES20.GL_RGBA, width, height, 0,
+                    GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, null);
+            GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D,
+                    GLES20.GL_TEXTURE_MAG_FILTER, GLES20.GL_LINEAR);
+            GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D,
+                    GLES20.GL_TEXTURE_MIN_FILTER, GLES20.GL_LINEAR);
+            GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D,
+                    GLES20.GL_TEXTURE_WRAP_S, GLES20.GL_CLAMP_TO_EDGE);
+            GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D,
+                    GLES20.GL_TEXTURE_WRAP_T, GLES20.GL_CLAMP_TO_EDGE);
+            GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, frameBuffer[i]);
+            GLES20.glFramebufferTexture2D(GLES20.GL_FRAMEBUFFER, GLES20.GL_COLOR_ATTACHMENT0,
+                    GLES20.GL_TEXTURE_2D, frameBufferTexture[i], 0);
+            GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, 0);
+            GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, 0);
+        }
     }
 
     private void createBitmap() {
@@ -169,10 +198,11 @@ public class GlRajatDynamicFilter extends GlFilter {
             return;
         }
 
-        int offsetDepthMapTextureUniform = getHandle("oTexture"); // 3
         GLES20.glActiveTexture(GLES20.GL_TEXTURE3);
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textures[0]);
-        GLES20.glUniform1i(offsetDepthMapTextureUniform, 3);
+        //GLES20.glUniform1i(offsetDepthMapTextureUniform, 0);
+        GLES20.glUniform1i(getHandle("oTexture"), 3);
+
 
         //spotPosition();
         calculateStickerVertices();
@@ -180,13 +210,16 @@ public class GlRajatDynamicFilter extends GlFilter {
         //GLES20.glUniformMatrix4fv(mMVPMatrixHandle, 1, false, mvpMatrix, 0);
         if (bitmap != null && !bitmap.isRecycled()) {
             GLUtils.texImage2D(GLES20.GL_TEXTURE_2D, 0, GLES20.GL_RGBA, bitmap, 0);
+            GLES20.glGenerateMipmap(GLES20.GL_TEXTURE_2D);
         }
 
         // Recycle the bitmap, since its data has been loaded into OpenGL.
         releaseBitmap();
 
 
-        GLES20.glUniformMatrix4fv(getHandle("uMVPMatrix"), 1, false, getMVPMatrixAsFloatBuffer(mvpMatrix));
+        GLES20.glUniformMatrix4fv(mMVPMatrixHandle, 1, false, getMVPMatrixAsFloatBuffer(mvpMatrix));
+
+        //drawFrameBuffer(textures[0],getMVPMatrixAsFloatBuffer(mStickerVertices),getMVPMatrixAsFloatBuffer(mVideoVertices));
 
     }
 
@@ -216,7 +249,7 @@ public class GlRajatDynamicFilter extends GlFilter {
         float centerX = stickerX + stickerWidth / 2f;
         float centerY = stickerY + stickerHeight / 2f;
         android.opengl.Matrix.setIdentityM(mvpMatrix, 0);
-        android.opengl.Matrix.rotateM(mvpMatrix, 0, rotation, 0.0f, 0.0f, 10.0f);
+        android.opengl.Matrix.rotateM(mvpMatrix, 0, rotation, 0.0f, 0.0f, 1.0f);
 
         rotation++;
 
