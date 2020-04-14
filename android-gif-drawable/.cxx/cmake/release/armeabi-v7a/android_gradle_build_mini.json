@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/rajat/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "pl_droidsonroids_gif-Debug-armeabi-v7a": {
+      "artifactName": "pl_droidsonroids_gif",
+      "buildCommand": "/home/rajat/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/armeabi-v7a --target pl_droidsonroids_gif",
+      "abi": "armeabi-v7a",
+      "output": "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/build/intermediates/cmake/release/obj/armeabi-v7a/libpl_droidsonroids_gif.so"
+    }
+  }
+}

@@ -1,1 +1,1 @@
-include ':sample', ':camerarecorder', ':gdxlibrary'
+include ':sample', ':camerarecorder', ':gdxlibrary', ':android-gif-drawable'

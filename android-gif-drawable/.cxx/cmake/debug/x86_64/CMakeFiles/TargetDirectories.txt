@@ -1,0 +1,3 @@
+/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir
+/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/debug/x86_64/CMakeFiles/pl_droidsonroids_gif.dir

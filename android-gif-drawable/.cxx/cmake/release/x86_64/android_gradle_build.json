@@ -1,0 +1,131 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/rajat/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64 --target clean"
+	],
+	"libraries" : 
+	{
+		"pl_droidsonroids_gif-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "pl_droidsonroids_gif",
+			"buildCommand" : "/home/rajat/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64 --target pl_droidsonroids_gif",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/bitmap.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/control.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/decoding.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/dispose.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/drawing.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/exception.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/gif.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/giflib/dgif_lib.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/giflib/gifalloc.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/giflib/openbsd-reallocarray.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/init.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/jni.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/metadata.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/opengl.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/surface.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dpl_droidsonroids_gif_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -std=c11 -Weverything -Wall -DDEBUG -g -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/src/main/c/time.c",
+					"workingDirectory" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/build/intermediates/cmake/release/obj/x86_64/libpl_droidsonroids_gif.so",
+			"toolchain" : "13681723358130335102"
+		}
+	},
+	"toolchains" : 
+	{
+		"13681723358130335102" : 
+		{
+			"cCompilerExecutable" : "/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/rajat/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

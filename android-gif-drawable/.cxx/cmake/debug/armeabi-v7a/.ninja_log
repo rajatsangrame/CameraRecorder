@@ -1,0 +1,19 @@
+# ninja log v5
+3	303	0	CMakeFiles/pl_droidsonroids_gif.dir/bitmap.c.o	1f2f9a5aae5afae9
+3	312	0	CMakeFiles/pl_droidsonroids_gif.dir/dispose.c.o	e4ad3bff5e2c07f5
+3	347	0	CMakeFiles/pl_droidsonroids_gif.dir/control.c.o	b84a743541c9192a
+3	347	0	CMakeFiles/pl_droidsonroids_gif.dir/decoding.c.o	9a64eb80ebb09f63
+3	371	0	CMakeFiles/pl_droidsonroids_gif.dir/drawing.c.o	66b3a078020d02e
+313	434	0	CMakeFiles/pl_droidsonroids_gif.dir/giflib/openbsd-reallocarray.c.o	8ce9219fb6f320d1
+4	484	0	CMakeFiles/pl_droidsonroids_gif.dir/gif.c.o	846dfc195cb62f7a
+347	513	0	CMakeFiles/pl_droidsonroids_gif.dir/giflib/gifalloc.c.o	128b82dcb6b26963
+303	605	0	CMakeFiles/pl_droidsonroids_gif.dir/exception.c.o	aa9737f3d3e20e9d
+371	662	0	CMakeFiles/pl_droidsonroids_gif.dir/init.c.o	6755f227ba8ee2dd
+434	671	0	CMakeFiles/pl_droidsonroids_gif.dir/jni.c.o	99c51d386a8a1f68
+347	769	0	CMakeFiles/pl_droidsonroids_gif.dir/giflib/dgif_lib.c.o	b90a4b1c69e33c2
+671	798	0	CMakeFiles/pl_droidsonroids_gif.dir/memset.arm.S.o	bf0d4b56464935e0
+513	802	0	CMakeFiles/pl_droidsonroids_gif.dir/metadata.c.o	581ed964fa948e8
+484	835	0	CMakeFiles/pl_droidsonroids_gif.dir/opengl.c.o	f114fa55fc8144d2
+662	893	0	CMakeFiles/pl_droidsonroids_gif.dir/time.c.o	8bbea7e0ced1b4dc
+605	943	0	CMakeFiles/pl_droidsonroids_gif.dir/surface.c.o	407b397dfc23c4c
+943	1061	0	/home/rajat/AndroidStudioProjects/CameraRecorder/android-gif-drawable/build/intermediates/cmake/debug/obj/armeabi-v7a/libpl_droidsonroids_gif.so	f0eb1c5e0d9ca454

@@ -62,14 +62,12 @@ public class GlPreviewRenderer extends GlFrameBufferObjectRenderer implements Su
     private SurfaceCreateListener surfaceCreateListener;
     private MediaVideoEncoder videoEncoder;
 
-
     public GlPreviewRenderer(GLSurfaceView glView) {
         this.glView = glView;
         this.glView.setEGLConfigChooser(new GLES20ConfigChooser(false));
         this.glView.setEGLContextFactory(new GLES20ContextFactory());
         this.glView.setRenderer(this);
         this.glView.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
-
 
         Matrix.setIdentityM(STMatrix, 0);
     }
@@ -146,6 +144,7 @@ public class GlPreviewRenderer extends GlFrameBufferObjectRenderer implements Su
 
     @Override
     public void onSurfaceCreated(EGLConfig config) {
+
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
         final int[] args = new int[1];
@@ -194,6 +193,8 @@ public class GlPreviewRenderer extends GlFrameBufferObjectRenderer implements Su
 
     @Override
     public void onSurfaceChanged(int width, int height) {
+
+        //this.glView.getHolder().setFixedSize(width, height);
 
         filterFramebufferObject.setup(width, height);
         previewShader.setFrameSize(width, height);

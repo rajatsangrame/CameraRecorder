@@ -2,10 +2,13 @@ package com.daasuu.sample;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
+
+import com.daasuu.camerarecorder.egl.filter.GlFilter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
             SquareActivity.startActivity(MainActivity.this);
         });
 
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        //GlFilter.bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.sticker, options);
+
     }
 
     @Override
@@ -42,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
                 checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED ||
                 checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
-                ) {
+        ) {
 
             requestPermissions(new String[]{Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE}, CAMERA_PERMISSION_REQUEST_CODE);
             return false;

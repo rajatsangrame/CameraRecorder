@@ -24,7 +24,12 @@ import com.daasuu.camerarecorder.egl.filter.GlVignetteFilter;
 import com.daasuu.camerarecorder.egl.filter.GlWeakPixelInclusionFilter;
 import com.daasuu.sample.R;
 
+import java.io.IOException;
 import java.io.InputStream;
+
+import pl.droidsonroids.gif.GifOptions;
+import pl.droidsonroids.gif.GifTexImage2D;
+import pl.droidsonroids.gif.InputSource;
 
 public enum Filters {
     NORMAL,
@@ -86,8 +91,20 @@ public enum Filters {
                 bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sachin, options);
                 return new GlRajatOverlayFilter(bitmap);
             case OVERLAY_DYNAMIC:
-                bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.sticker, options);
-                return new GlRajatDynamicFilter(bitmap);
+//                GifTexImage2D gifTexImage2D;
+//                try {
+//                    GifOptions gifOptions = new GifOptions();
+//                    gifOptions.setInIsOpaque(false);
+//                    gifTexImage2D = new GifTexImage2D(new InputSource.ResourcesSource(
+//                            context.getResources(), R.drawable.bear), gifOptions);
+//                } catch (IOException e) {
+//                    throw new IllegalStateException(e);
+//                }
+//                gifTexImage2D.startDecoderThread();
+//                return new GlGifOverlayFilter(gifTexImage2D);
+
+                int[] gif = {R.drawable.gif_1, R.drawable.gif_2, R.drawable.gif_3};
+                return new GlGifOverlayFilter(context, gif);
             case SEPIA:
                 return new GlSepiaFilter();
             case SHARPEN:

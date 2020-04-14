@@ -30,5 +30,6 @@ dependencies {
 
   implementation project(':camerarecorder')
   implementation project(':gdxlibrary')
+  implementation project(path: ':android-gif-drawable')
 
 }

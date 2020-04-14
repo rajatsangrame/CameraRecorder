@@ -129,7 +129,9 @@ public class GlFilter {
     //    GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     //    GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
     //
+
     public void draw(final int texName, final GLES20FramebufferObject fbo) {
+
         useProgram();
 
         GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, vertexBufferName);
@@ -145,7 +147,6 @@ public class GlFilter {
         onDraw();
 
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4);
-
         GLES20.glDisableVertexAttribArray(getHandle("aPosition"));
         GLES20.glDisableVertexAttribArray(getHandle("aTextureCoord"));
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, 0);
